@@ -1,0 +1,25 @@
+{
+  "name": "interview_task",
+  "version": "1.0.0",
+  "description": "Ecommerce Task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sathyamoorthi Ravi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "bcrypt-nodejs": "^0.0.3",
+    "bson-objectid": "^2.0.4",
+    "colors": "^1.4.0",
+    "http-status": "^1.6.2",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.0.1",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "validator": "^13.9.0"
+  }
+}

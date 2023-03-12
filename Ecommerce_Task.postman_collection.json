@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Ecommerce_Task",
+		"_postman_id": "2257b36f-c3c2-82a8-fe78-21850ce34971",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add items to cart",
+			"request": {
+				"url": "{{URL}}/cart/item",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\":109,\"quantity\": 2}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Warehouse Detail",
+			"request": {
+				"url": {
+					"raw": "{{URL}}/warehouse/distance?postal_code=465535",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"warehouse",
+						"distance"
+					],
+					"query": [
+						{
+							"key": "postal_code",
+							"value": "465535",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product details",
+			"request": {
+				"url": "{{URL}}/product/102",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Card Details",
+			"request": {
+				"url": "{{URL}}/cart/items",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get single Cart",
+			"request": {
+				"url": "{{URL}}/cart/items/640c2e76cb8e099cac8ea134",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all items from cart",
+			"request": {
+				"url": "{{URL}}/cart/{{cartId}",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
